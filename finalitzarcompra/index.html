@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Finalitzar Compra - Tot Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="checkout.js" defer></script>   
+</head>
+<body>
+    <header>
+        <h1 class="logo">Tot Online</h1>
+        <p>Revisa i confirma la teva compra</p>
+        <nav>
+            <a href="../index.html">Inici</a>
+            <a href="../register/register.html">Iniciar sessió</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h2>Resum de la comanda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producte</th>
+                        <th>Quantitat</th>
+                        <th>Preu unitari</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="checkoutItems">
+                    
+                </tbody>
+            </table>
+
+            <p class="total" id="checkoutTotal">Total: 0€</p>
+            <button onclick="alert('Compra finalitzada!')">Finalitzar compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tot Online - Plataforma de compra segura d’objectes de videojocs</p>
+        <p>© 2025 Tots els drets reservats</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Tot Online - Botiga</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js" defer></script>
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" alt="">
+        <p>Compra i ven objectes de videojocs de manera segura</p>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Cerca productes...">
+
+        <select id="categoryFilter">
+            <option value="all">Tots els jocs</option>
+            <option value="skins">Counter Strike</option>
+            <option value="monedes">FIFA</option>
+            <option value="comptes">Fortnite</option>
+        </select>
+        
+    <input type="number" id="minPrice" placeholder="Preu mínim">
+    <input type="number" id="maxPrice" placeholder="Preu màxim">
+
+        <button onclick="filterProducts()">Cercar</button>
+    </div>
+
+        <nav>
+            <a href="./index.html">Inici</a>
+            <a href="./register/register.html">Iniciar sessió</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Benvingut a Tot Online</h2>
+            <p>La plataforma segura per comprar objectes de videojocs sense estafes.</p>
+        </section>
+
+        <section>
+            <h2>Productes destacats</h2>
+
+            <article data-category="skins" data-price="25" data-name="Skin AK-47 - Counter Strike">
+                <h3>Skin AK-47 - Counter Strike</h3>
+                <p>Preu: 25€</p>
+                <p>Disponibilitat: En estoc</p>
+                <button onclick="addToCart('Skin AK-47 - Counter Strike', 25)">Afegir al carret</button>
+            </article>
+
+            <article data-category="monedes" data-price="10" data-name="1000 Monedes - FIFA">
+                <h3>1000 Monedes - FIFA</h3>
+                <p>Preu: 10€</p>
+                <p>Disponibilitat: En estoc</p>
+                <button onclick="addToCart('1000 Monedes - FIFA', 10)">Afegir al carret</button>
+            </article>
+
+            <article data-category="comptes" data-price="40" data-name="Compte Premium - Fortnite">
+                <h3>Compte Premium - Fortnite</h3>
+                <p>Preu: 40€</p>
+                <p>Disponibilitat: Últimes unitats</p>
+                <button onclick="addToCart('Compte Premium - Fortnite', 40)">Afegir al carret</button>
+            </article>
+
+        </section>
+
+        <section class="cart">
+            <h2>Carret de compra</h2>
+            <ul id="cartItems"></ul>
+            <p id="cartTotal">Total: 0€</p>
+            <button onclick="finalitzarCompra()">Finalitzar compra</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tot Online - Plataforma de compra segura d’objectes de videojocs</p>
+        <p>© 2025 Tots els drets reservats</p>
+    </footer>
+</body>
+</html>

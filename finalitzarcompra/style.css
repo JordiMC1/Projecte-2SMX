@@ -1,0 +1,123 @@
+:root {
+    --blanc: #ffffff;
+    --blau-fosc: #0b1c2d;
+    --blau-principal: #2563eb;
+    --blau-principal-hover: #1d4ed8;
+    --blau-clar: #e0e7ff;
+    --blau-fons: #eef2ff;
+    --blau-borda: #c7d2fe;
+}
+
+/* HEADER */
+header {
+    background-color: var(--blau-fosc);
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header .logo {
+    color: var(--blanc);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header p {
+    color: var(--blau-clar);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: var(--blau-clar);
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: var(--blau-fons);
+    min-height: 80vh;
+}
+
+.checkout {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--blanc);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--blau-fosc);
+}
+
+.checkout table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.checkout th, .checkout td {
+    padding: 10px;
+    border: 1px solid var(--blau-borda);
+    text-align: center;
+    color: var(--blau-fosc);
+    font-size: 14px;
+}
+
+.checkout th {
+    background-color: var(--blau-clar);
+}
+
+.checkout tr:nth-child(odd) td {
+    background-color: #f0f4ff;
+}
+
+.checkout .total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--blau-fosc);
+}
+
+.checkout button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blau-principal);
+    border: none;
+    border-radius: 5px;
+    color: var(--blanc);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout button:hover {
+    background-color: var(--blau-principal-hover);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--blau-fosc);
+    color: var(--blanc);
+    padding: 20px 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: var(--blau-borda);
+}
